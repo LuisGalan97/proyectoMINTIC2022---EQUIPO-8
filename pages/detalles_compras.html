@@ -5,54 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles de la compra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="../assets/css/slick.css"/>
+	<link type="text/css" rel="stylesheet" href="../assets/css/slick-theme.css"/>
+	<link type="text/css" rel="stylesheet" href="../assets/css/nouislider.min.css"/>
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css">	
+	<link type="text/css" rel="stylesheet" href="../assets/css/style.css"/>
 </head>
-<body>
+<body class="bg-secondary">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="menu_principal.html">Menu Principal</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu de Administrador
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                          <a class="dropdown-item" href="tabla_usuarios.html">Usuarios registrados</a>
+                          <a class="dropdown-item" href="registro_compras.html">Compras registradas</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu de Usuario
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                          <a class="dropdown-item" href="carrito_compras.html">Carrito</a>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                      </li>
+                </ul>
+              </div>
+              <a class="nav-link" href="../index.html" style="color: rgba(255,255,255,.55);"><i class="fa fa-times" aria-hidden="true" ></i>   Cerrar Sesion</a>
+        </div>
+    </nav>
     <section>
-        <h1>DETALLES DE LA COMPRA</h1>
-        <a  href="registro_compras.html">Regresar</a><br/><br/>
-        <h2>ID de compra: 1</h2>
-        <table border="1" cellspacing="0" width="60%">
-            <thead>
-                <tr>
-                    <th width="10%">N°</th>
-                    <th width="30%">Producto</th>
-                    <th width="30%">Precio(COP)</th>
-                    <th width="10%">Cantidad</th>
-                    <th width="20%">Total Producto</th>
-                    
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Computadora Portatil</td>
-                    <td>2500000</td>
-                    <td>3</td>
-                    <td>7500000</td>
-                    
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Auricular</td>
-                    <td>100000</td>
-                    <td>1</td>
-                    <td>100000</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Tablet</td>
-                    <td>1000000</td>
-                    <td>2</td>
-                    <td>2000000</td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td colspan="2"></td>
-                    <td>6</td>
-                    <td>9600000</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="bg-secondary">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="text-center text-white">DETALLES DE LA COMPRA</h1>
+                        <a  href="registro_compras.html" class="btn btn-primary">Regresar</a><br/><br/>
+                        <h2>ID de compra: 1</h2>
+                        <div class="col-sm-12">&nbsp;</div>
+                        <div class="table-responsive">
+                        <table class="table table-dark table-hover">
+                            <thead>
+                                <tr>
+                                    <th width="10%">N°</th>
+                                    <th width="30%">Producto</th>
+                                    <th width="30%">Precio(COP)</th>
+                                    <th width="10%">Cantidad</th>
+                                    <th width="20%">Total Producto</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Computadora Portatil</td>
+                                    <td>2500000</td>
+                                    <td>3</td>
+                                    <td>7500000</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Auricular</td>
+                                    <td>100000</td>
+                                    <td>1</td>
+                                    <td>100000</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Tablet</td>
+                                    <td>1000000</td>
+                                    <td>2</td>
+                                    <td>2000000</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td colspan="2"></td>
+                                    <td>6</td>
+                                    <td>9600000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">&nbsp;</div>
+        <div class="col-sm-12">&nbsp;</div>
     </section>
+
+    <footer id="footer">
+        <div id="bottom-footer" class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <ul class="footer-payments">
+                            <li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+                            <li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+                            <li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+                            <li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+                            <li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
+                            <li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
+                        </ul>
+                        <span class="copyright">
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> MISION TIC 2022 GRUPO 8 </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/slick.min.js"></script>
+	<script src="../assets/js/nouislider.min.js"></script>
+	<script src="../assets/js/jquery.zoom.min.js"></script>
+	<script src="../assets/js/main.js"></script>
 </body>
 </html>
