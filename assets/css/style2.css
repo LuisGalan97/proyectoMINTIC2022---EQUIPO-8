@@ -60,3 +60,9 @@ button, .boton{
 button:hover, .boton:hover {
     background-color: #f3c8bb;
 }
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
